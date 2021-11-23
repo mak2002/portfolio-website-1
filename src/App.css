@@ -1,38 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: #252934;
+  height: 60px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links {
+  width: 100%;
+  max-height: 80px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+/* .navbar .wrapper .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+
+/* .navbar .links button { */
+.navbar .wrapper button {
+  display: none;
+  margin-left: auto auto;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .links a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 850px) {
+  .navbar .links a {
+    font-size: 20px;
   }
 }
+
+@media only screen and (max-width: 750px) {
+  .navbar .links a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar .wrapper button {
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-left: 15rem;
+    /* margin-top: 2rem; */
+    /* margin-left: 15rem; */
+  }
+
+  .navbar .links {
+    /* font-size: 15px; */
+    display: none;
+  }
+
+  .navbar .wrapper #hidden {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    height: 280px;
+    max-height: 280px;
+    width: 100%;
+    background-color: #252934;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .wrapper #hidden a{
+    margin: 10px;
+    font-size: 20px;
+  }
+  
+}
+
+
+/* navbar leftside links */
