@@ -6,14 +6,18 @@
 .App {
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+
+/* // #4587BA #BA7845 */
 .navbar {
-  background-color: #252934;
+  /* background-color: #252934; */
+  background-color: #5f95be;
   height: 60px;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-evenly; */
+  position: fixed;
+  width: 100%;
 }
 
 .links {
@@ -30,7 +34,7 @@
 } */
 
 /* .navbar .links button { */
-.navbar .wrapper button {
+.navbar .wrapper #menu {
   display: none;
   margin-left: auto auto;
 }
@@ -55,7 +59,7 @@
 }
 
 @media only screen and (max-width: 650px) {
-  .navbar .wrapper button {
+  .navbar .wrapper #menu {
     position: relative;
     display: flex;
     /* align-items: center; */
@@ -90,5 +94,12 @@
   
 }
 
+.section {
+  height: 100vh;
+}
 
 /* navbar leftside links */
+/* 
+#skills {
+  background: rgb(0, 0, 0);
+} */

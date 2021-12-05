@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "../App.css";
 import MenuIcon from "@mui/icons-material/Menu";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
 
-export default function Navbar() {
+export default function Navbar({ setcolorTheme }) {
   const [showLinks, setshowLinks] = useState(false);
+
   return (
-    <div className="navbar">
+    <div className="navbar fixed z-10">
       <div className="wrapper">
         <div className="links" id={showLinks ? "hidden" : ""}>
           <a href="#about">About</a>
@@ -13,7 +16,8 @@ export default function Navbar() {
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
-        <button onClick={() => setshowLinks(!showLinks)}>
+
+        <button id="menu" onClick={() => setshowLinks(!showLinks)}>
           <i>
             <MenuIcon />
           </i>
@@ -22,3 +26,4 @@ export default function Navbar() {
     </div>
   );
 }
+// #4587BA #BA7845
