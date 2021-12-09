@@ -1,14 +1,20 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
+import "../App.css";
 
 export default function Listitem() {
   const skills = [
     "React",
     "JavaScript",
-    "HTML",
-    "CSS",
+    "Git",
     "Material-UI",
+    "CSS",
     "Tailwind",
+    'NodeJs',
+    // "MySQL",
+    // "database",
+    "PostgresSQL"
+    // "express"
     // "Node JS, Express",
   ];
   return (
@@ -18,7 +24,7 @@ export default function Listitem() {
           return (
             <div>
               <img
-                className=" m-20 rounded-lg transition duration-400 ease-in-out hover:-translate-y-1 hover:scale-110 transform object-cover h-48 w-18"
+                className=" m-6 rounded-lg transition duration-400 ease-in-out hover:-translate-y-1 hover:scale-110 transform object-cover h-48 w-18"
                 src={
                   `${process.env.PUBLIC_URL}/icons/` +
                   skill.toLocaleLowerCase() +

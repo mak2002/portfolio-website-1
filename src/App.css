@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .App {
   width: 100vw;
@@ -11,10 +14,12 @@
 }
 
 
+
 /* // #4587BA #BA7845 */
 .navbar {
   /* background-color: #252934; */
   background-color: #5f95be;
+  /* #009ffd #2a2a72 */
   height: 60px;
   position: fixed;
   width: 100%;
@@ -96,6 +101,11 @@
 
 .section {
   height: 100vh;
+}
+
+.projects-section {
+  height: 150vh;
+  /* left: ; */
 }
 
 /* navbar leftside links */

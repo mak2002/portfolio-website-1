@@ -8,13 +8,13 @@ export default function Navbar({ setcolorTheme }) {
   const [showLinks, setshowLinks] = useState(false);
 
   return (
-    <div className="navbar fixed z-10">
+    <div className="navbar fixed z-10  duration-700 ease-in-out">
       <div className="wrapper">
         <div className="links" id={showLinks ? "hidden" : ""}>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a className="hover:bg-white" href="#about">About</a>
+          <a className="hover:bg-white" href="#skills">Skills</a>
+          <a className="hover:bg-white" href="#projects">Projects</a>
+          <a className="hover:bg-white" href="#contact">Contact</a>
         </div>
 
         <button id="menu" onClick={() => setshowLinks(!showLinks)}>
